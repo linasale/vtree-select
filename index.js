@@ -12,6 +12,9 @@ var language = require("cssauron")({
     if (node.properties && node.properties.attributes) {
       return node.properties.attributes.class;
     }
+    if (node.properties) {
+      return node.properties.class;
+    }
     return undefined;
   },
   "id" :"id",
